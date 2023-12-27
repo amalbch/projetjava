@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".QuizResults">
+    <ImageView
+        android:id="@+id/Congratulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/congratulation"
+        android:contentDescription="@string/app_name" />
+    <TextView
+        android:id="@+id/sucsstexview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/Congratulation"
+        android:text="You've successfully completed a quiz"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_below="@+id/sucsstexview"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correctAnswer"
+            android:textColor="#00C853"
+            android:text="correct Answer :0"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incorrectAnswer"
+            android:layout_marginTop="5dp"
+          android:text="Wrong Answer :0"
+            android:textStyle="bold"
+            android:textColor="#DD2C00"
+            tools:ignore="HardcodedText" />
+        
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/StartnewQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/round_back_green20"
+        android:text="Start new Quiz"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
